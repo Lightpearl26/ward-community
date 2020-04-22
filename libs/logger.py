@@ -1,7 +1,7 @@
 # Importation des modules
-from tkinter import Frame, Text
 from os.path import exists, join
-from time import strftime
+from time import strftime, ctime
+from tkinter import Frame, Text
 from threading import Thread
 from os import mkdir
 
@@ -33,7 +33,6 @@ class Logger(Frame):
 			log = "[{}][{}-{}][{}]: {}".format(strftime("%H-%M-%s"), thread, thread_id, LEVELS[level], msg)
 		print(log)
 		self.logs.append((level, log))
-		self.update_display()
 
 	def save(self, filter=0):
 		if not exists(self.dir):

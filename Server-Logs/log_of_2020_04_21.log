@@ -1,0 +1,20 @@
+[Tue Apr 21 22:47:09 2020][MAIN-THREAD][Debug]: Initialising the server
+[Tue Apr 21 22:47:09 2020][MAIN-THREAD][Debug]: Loading banlist of the room Belote
+[Tue Apr 21 22:47:09 2020][MAIN-THREAD][Debug]: Adding room Belote to server
+[Tue Apr 21 22:47:09 2020][MAIN-THREAD][Debug]: Loading banlist of the room Chat
+[Tue Apr 21 22:47:09 2020][MAIN-THREAD][Debug]: Adding room Chat to server
+[Tue Apr 21 22:47:09 2020][MAIN-THREAD][Debug]: Loading banlist of the room Tarot
+[Tue Apr 21 22:47:09 2020][MAIN-THREAD][Debug]: Adding room Tarot to server
+[Tue Apr 21 22:47:09 2020][MAIN-THREAD][Debug]: Loading banlist of the room Belote
+[Tue Apr 21 22:47:09 2020][MAIN-THREAD][Debug]: Loading banlist of the room Chat
+[Tue Apr 21 22:47:09 2020][MAIN-THREAD][Debug]: Loading banlist of the room Tarot
+[Tue Apr 21 22:47:09 2020][MAIN-THREAD][Warning]: Starting the server
+[Tue Apr 21 22:47:09 2020][MAIN-THREAD][Info]: Server is running on ('192.168.1.16', 12345)
+[Tue Apr 21 22:47:31 2020][MAIN-THREAD][Warning]: The server has been shutdowned
+[Tue Apr 21 22:47:31 2020][MAIN-THREAD][Info]: Server stop sending messages
+[Tue Apr 21 22:47:31 2020][MAIN-THREAD][Info]: Server stop accept connection
+[Tue Apr 21 22:47:31 2020][MAIN-THREAD][Info]: Server is now offline
+[Tue Apr 21 22:47:31 2020][MAIN-THREAD][Debug]: Save banlist of the room Belote
+[Tue Apr 21 22:47:31 2020][MAIN-THREAD][Debug]: Save banlist of the room Chat
+[Tue Apr 21 22:47:31 2020][MAIN-THREAD][Debug]: Save banlist of the room Tarot
+[Tue Apr 21 22:47:31 2020][MAIN-THREAD][Warning]: stopping the server
