@@ -237,10 +237,11 @@ class Server(Tk):
 			else:
 				try:
 					for conn in to_read:
-						msg = conn.recv(9999).decode()
+						msg = conn.recv(9999999).decode()
+						self.logger.log(1, "Server recieved message '{}'".format(msg))
 						self.recv_queue.put(msg)
 				except OSError:
-					pass
+					self.logger.log(2, "The server is closed, can't listen to clients")
 		self.logger.log(1, "Server is now offline")
 		
 	def start(self):
@@ -319,10 +320,49 @@ class Server(Tk):
 		self.stop()
 		exit()
 
-class Client:
+class Client(Tk):
 	"""
 	"""
 	def __init__(self, name, room):
+		Tk.__init__(self)
 		self.conn = socket(AF_INET, SOCK_STREAM)
 		self.name = name
 		self.room = room
+		self.messages = Queue()
+		self.listening = False
+		self.listen_worker = Thread(target=self.listener)
+		self.logger = logger.Logger(self, directory=LOG_FOLDER)
+
+	def connect(self):
+		self.conn.connect(("ward-community.ddns.net", SERVER_PORT))
+		self.conn.send("ASKCO;{};{}".format(self.room, self.name).encode())
+		self.listening = True
+		self.listen_worker.start()
+
+	def listener(self):
+		while self.listening:
+			try:
+				to_read, _, _ = select([self.conn], [], [], 0.05)
+			except error:
+				self.logger.log(3, "cannot listen to connection cause it is probably closed")
+			except ValueError:
+				pass
+			else:
+				try:
+					for conn in to_read:
+						msg = conn.recv(9999999).decode()
+						self.messages.put(msg)
+				except OSError:
+					self.logger.log(2, "The client or server is closed, can't listen to server")
+
+	def send(self, message):
+		self.conn.send(message.encode())
+
+	def close(self):
+		self.send("CLOSE;Goodbye")
+		self.listening = False
+		self.listen_worker.join()
+		self.conn.close()
+		self.logger.log(1, "Succesfully closed the client")
+
+
