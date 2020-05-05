@@ -79,7 +79,8 @@ class Server(Tk):
 		self.workers = [
 			Thread(target=self.serve_forever),
 			Thread(target=self.accept_conn),
-			Thread(target=self.process_sending)
+			Thread(target=self.process_sending),
+			Thread(target=self.process_messages)
 		]
 
 		# Initialisation de la liste des salles de la GUI
@@ -165,7 +166,7 @@ class Server(Tk):
 		if self.connected(client_name)[0]:
 			self.rooms[room].send("KICKD;{}".format(message), client_names=[client_name])
 		self.rooms[room].remove_client(client_name)
-		self.logger.log(1, "Kicking {} from room {}".format(client_name, room))
+		self.logger.log(1, "Kicking [{}] from room [{}]".format(client_name, room))
 
 	def ban(self, room, client_name, message=""):
 		self.kick(room, client_name, message)
@@ -209,7 +210,6 @@ class Server(Tk):
 				except Empty:
 					msg, room, client_names = None, None, None
 				if msg and room:
-					msg, room, client_names = self.send_queue.get()
 					self.rooms[room].send(msg, client_names)
 					self.logger.log(1, "Sending {} to room {} to clients {}".format(msg, room, client_names))
 		self.logger.log(1, "Server stop sending messages")
@@ -238,10 +238,10 @@ class Server(Tk):
 				try:
 					for conn in to_read:
 						msg = conn.recv(9999999).decode()
-						self.logger.log(1, "Server recieved message '{}'".format(msg))
+						self.logger.log(0, "Server recieved message '{}'".format(msg))
 						self.recv_queue.put(msg)
 				except OSError:
-					self.logger.log(2, "The server is closed, can't listen to clients")
+					conn.close()
 		self.logger.log(1, "Server is now offline")
 		
 	def start(self):
@@ -274,6 +274,24 @@ class Server(Tk):
 			self.kick(infos[1], infos[2], message="you have been kicked by the server GUI")
 		if infos[0] == "ban":
 			self.ban(infos[1], infos[2], message="you have been kicked by the server GUI")
+
+	def process_messages(self):
+		while self.running:
+			if not self.recv_queue.empty():
+				try:
+					msg = self.recv_queue.get(timeout=0.05)
+				except Empty:
+					msg = None
+				if msg:
+					cmd = msg.split(";")
+					if cmd[0] == "MESSA":
+						self.logger.log(1, "recieved [{}] from user [{}] of room [{}]".format(cmd[3], cmd[1], cmd[2]))
+					elif cmd[0] == "CLOSE":
+						self.kick(cmd[1], cmd[2], "closing connection")
+					else:
+						pass
+				else:
+					pass
 
 	def set_room_selection(self, event=None):
 		room = self.room_list.curselection()
@@ -356,10 +374,10 @@ class Client(Tk):
 					self.logger.log(2, "The client or server is closed, can't listen to server")
 
 	def send(self, message):
-		self.conn.send(message.encode())
+		self.conn.send("MESSA;{};{};{}".format(self.name, self.room, message).encode())
 
 	def close(self):
-		self.send("CLOSE;Goodbye")
+		self.conn.send("CLOSE;{};{};Goodbye".format(self.room, self.name).encode())
 		self.listening = False
 		self.listen_worker.join()
 		self.conn.close()

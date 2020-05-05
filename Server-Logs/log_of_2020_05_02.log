@@ -1,130 +1,29 @@
-[Sat May  2 02:10:39 2020][MAIN-THREAD][Debug]: Initialising the server
-[Sat May  2 02:10:39 2020][MAIN-THREAD][Debug]: Loading banlist of the room Belote
-[Sat May  2 02:10:39 2020][MAIN-THREAD][Debug]: Adding room Belote to server
-[Sat May  2 02:10:39 2020][MAIN-THREAD][Debug]: Loading banlist of the room Chat
-[Sat May  2 02:10:39 2020][MAIN-THREAD][Debug]: Adding room Chat to server
-[Sat May  2 02:10:39 2020][MAIN-THREAD][Debug]: Loading banlist of the room Tarot
-[Sat May  2 02:10:39 2020][MAIN-THREAD][Debug]: Adding room Tarot to server
-[Sat May  2 02:10:39 2020][MAIN-THREAD][Debug]: Loading banlist of the room Belote
-[Sat May  2 02:10:39 2020][MAIN-THREAD][Debug]: Loading banlist of the room Chat
-[Sat May  2 02:10:39 2020][MAIN-THREAD][Debug]: Loading banlist of the room Tarot
-[Sat May  2 02:10:39 2020][MAIN-THREAD][Warning]: Starting the server
-[Sat May  2 02:10:39 2020][MAIN-THREAD][Info]: Server is running on ('192.168.1.16', 12345)
-[Sat May  2 02:10:48 2020][MAIN-THREAD][Info]: Say Hello to Franck joining the server with ('86.234.118.189', 53349)
-[Sat May  2 02:10:52 2020][MAIN-THREAD][Info]: Server recieved message 'MESSA;Hello World'
-[Sat May  2 02:11:18 2020][MAIN-THREAD][Info]: Server recieved message 'MESSA;KICKC;Franck'
-[Sat May  2 02:11:31 2020][MAIN-THREAD][Info]: Server recieved message 'MESSA;c'est bô la vie'
-[Sat May  2 02:11:42 2020][MAIN-THREAD][Info]: Server recieved message 'MESSA;le serveur marche du tonerre'
-[Sat May  2 02:11:51 2020][MAIN-THREAD][Info]: Server recieved message 'MESSA;tonnerre?'
-[Sat May  2 02:12:04 2020][MAIN-THREAD][Info]: Server recieved message 'CLOSE;Goodbye'
-[Sat May  2 02:12:04 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:05 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:05 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:05 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:05 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:05 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:05 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:05 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:05 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:05 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:06 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:06 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:06 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:06 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:06 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:06 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:06 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:06 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:06 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:06 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:06 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:06 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:07 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:07 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:07 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:07 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:07 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:07 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:07 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:07 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:07 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:07 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:08 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:08 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:08 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:08 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:08 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:08 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:08 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:08 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:08 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:08 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:08 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:09 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:09 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:09 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:09 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:09 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:09 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:09 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:09 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:09 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:09 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:09 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:10 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:10 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:10 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:10 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:10 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:10 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:10 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:10 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:10 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:10 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:10 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:11 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:11 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:11 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:11 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:11 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:11 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:11 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:11 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:11 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:11 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:11 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:12 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:12 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:12 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:12 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:12 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:12 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:12 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:12 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:12 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:12 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:13 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:13 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:13 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:13 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:13 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:13 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:13 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:13 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:13 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:13 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:13 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Warning]: The server has been shutdowned
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Info]: Server stop accept connection
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Info]: Server stop sending messages
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Info]: Server recieved message ''
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Info]: Server is now offline
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Debug]: Save banlist of the room Belote
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Debug]: Save banlist of the room Chat
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Debug]: Save banlist of the room Tarot
-[Sat May  2 02:12:14 2020][MAIN-THREAD][Warning]: stopping the server
+[Sat May  2 02:31:30 2020][MAIN-THREAD][Debug]: Initialising the server
+[Sat May  2 02:31:30 2020][MAIN-THREAD][Debug]: Loading banlist of the room Belote
+[Sat May  2 02:31:30 2020][MAIN-THREAD][Debug]: Adding room Belote to server
+[Sat May  2 02:31:30 2020][MAIN-THREAD][Debug]: Loading banlist of the room Chat
+[Sat May  2 02:31:30 2020][MAIN-THREAD][Debug]: Adding room Chat to server
+[Sat May  2 02:31:30 2020][MAIN-THREAD][Debug]: Loading banlist of the room Tarot
+[Sat May  2 02:31:30 2020][MAIN-THREAD][Debug]: Adding room Tarot to server
+[Sat May  2 02:31:30 2020][MAIN-THREAD][Debug]: Loading banlist of the room Belote
+[Sat May  2 02:31:30 2020][MAIN-THREAD][Debug]: Loading banlist of the room Chat
+[Sat May  2 02:31:30 2020][MAIN-THREAD][Debug]: Loading banlist of the room Tarot
+[Sat May  2 02:31:30 2020][MAIN-THREAD][Warning]: Starting the server
+[Sat May  2 02:31:30 2020][MAIN-THREAD][Info]: Server is running on ('192.168.1.16', 12345)
+[Sat May  2 02:31:39 2020][MAIN-THREAD][Info]: Say Hello to Lightpearl joining the server with ('86.234.118.189', 53480)
+[Sat May  2 02:31:45 2020][MAIN-THREAD][Debug]: Server recieved message 'MESSA;Lightpearl;Chat;Hello World'
+[Sat May  2 02:31:45 2020][MAIN-THREAD][Info]: recieved [Hello World] from user [Lightpearl] of room [Chat]
+[Sat May  2 02:31:47 2020][MAIN-THREAD][Debug]: Server recieved message 'MESSA;Lightpearl;Chat;!'
+[Sat May  2 02:31:47 2020][MAIN-THREAD][Info]: recieved [!] from user [Lightpearl] of room [Chat]
+[Sat May  2 02:32:34 2020][MAIN-THREAD][Debug]: Server recieved message 'MESSA;Lightpearl;Chat;break;and invisible'
+[Sat May  2 02:32:34 2020][MAIN-THREAD][Info]: recieved [break] from user [Lightpearl] of room [Chat]
+[Sat May  2 02:32:49 2020][MAIN-THREAD][Debug]: Server recieved message 'CLOSE;Chat;Lightpearl;Goodbye'
+[Sat May  2 02:32:49 2020][MAIN-THREAD][Info]: Kicking [Lightpearl] from room [Chat]
+[Sat May  2 02:32:58 2020][MAIN-THREAD][Warning]: The server has been shutdowned
+[Sat May  2 02:32:58 2020][MAIN-THREAD][Info]: Server stop sending messages
+[Sat May  2 02:32:58 2020][MAIN-THREAD][Info]: Server stop accept connection
+[Sat May  2 02:32:58 2020][MAIN-THREAD][Debug]: Save banlist of the room Belote
+[Sat May  2 02:32:58 2020][MAIN-THREAD][Debug]: Save banlist of the room Chat
+[Sat May  2 02:32:58 2020][MAIN-THREAD][Debug]: Save banlist of the room Tarot
+[Sat May  2 02:32:58 2020][MAIN-THREAD][Warning]: stopping the server
+[Sat May  2 02:32:58 2020][MAIN-THREAD][Info]: Server is now offline

@@ -17,11 +17,16 @@ class Logger(Frame):
 	To change save directory use Logger(directory="your_dir")
 	"""
 	def __init__(self, parent, directory=DEFAULT_DIR):
+		# Initialisation des dépendances
 		Frame.__init__(self, parent)
+
+		# Construction des widgets
 		self.widget = Text(self, fg="white", bg="black", state="disabled")
 		for i, level in enumerate(LEVELS):
 			self.widget.tag_config(level, foreground=LEVELS_COLORS[i], background="black")
 		self.widget.pack(fill="both", expand="yes")
+
+		# Création des attributs du logger
 		self.logs = []
 		self.dir = directory
 		self.log_filter = 0
@@ -33,6 +38,11 @@ class Logger(Frame):
 			log = "[{}][{}-{}][{}]: {}".format(strftime("%H-%M-%s"), thread, thread_id, LEVELS[level], msg)
 		print(log)
 		self.logs.append((level, log))
+
+		# Update du Widget
+		self.widget.config(state="normal")
+		self.widget.insert("end", log+"\n", LEVELS[level])
+		self.widget.config(state="disabled")
 
 	def save(self, filter=0):
 		if not exists(self.dir):
@@ -49,13 +59,3 @@ class Logger(Frame):
 
 	def set_filter(self, filter):
 		self.log_filter = filter
-
-	def update_display(self, event=None):
-		self.widget.config(state="normal")
-		self.widget.delete("1.0", "end")
-		for level, msg in self.get_logs(self.log_filter):
-			self.widget.insert("end", msg+"\n", LEVELS[level])
-		self.widget.config(state="disabled")
-		self.widget.update()
-		self.update()
-		self.master.update()

@@ -10,4 +10,4 @@ while client.listening:
 	if cmd == "close":
 		client.close()
 	else:
-		client.send("MESSA;{}".format(cmd))
+		client.send(cmd)
